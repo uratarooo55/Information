@@ -1,0 +1,29 @@
+<h1>料理メモ</h1>
+
+
+<% @cookings.each do |t| %>
+  <% if user_signed_in? && current_user.id == t.user_id %> 
+    <p>メモ:<%= t.memo %></p>
+    
+    <%= image_tag t.image_url, size: "250x200" if t.image? %>
+    <%= t.site %>
+    <iframe width="300" height="150" src="https://www.youtube.com/embed/<%= t.youtube.last(11)%>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <h2>評価：
+    <span class="star-rating">
+    <span class="star-rating-front" style="width: <%= getPercent(t.overall) %>%;">★★★★★</span>
+    <span class="star-rating-back">★★★★★</span>
+ </span> 
+ </h2>
+
+ </div>  
+
+      <%= link_to "詳細へ", post_path(t.id) %>
+      <%= link_to "編集する", edit_post_path(t.id) %>
+      <%= button_to "削除する", post_path(t.id), method: :delete %>
+
+    </div>
+
+  <% end %>
+  <% end %>
+
+  <%= link_to "post一覧に戻る", posts_path %>

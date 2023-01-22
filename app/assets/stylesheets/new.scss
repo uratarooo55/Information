@@ -1,0 +1,71 @@
+.field{
+    text-align: center;
+  }
+
+
+  .new{
+    text-align: center;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    box-align: center;
+  }
+
+  .star{
+    margin: 10px;
+    text-align: center;
+  
+  }
+
+
+  .star input[type='radio']{
+    display: none;
+  }
+  .star label{
+    position: relative;
+    padding: 10px 10px 0;
+    color: gray;
+    cursor: pointer;
+    font-size: 40px; /*星の大きさを変更するときはここ*/
+  }
+  .star label .text{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    text-align: center;
+    font-size: 9px; /*星の上の説明書きの大きさを変更するときはここ*/
+    color: gray;
+  }
+  .star label:hover,
+  .star label:hover ~ label,
+  .star input[type='radio']:checked ~ label{
+    color: #ffcc00;
+  }
+
+
+  .new {
+    margin: 40px auto;
+    width: 50%;
+    border: solid #d3def1;
+    border-radius: 20px;
+    text-align: center;
+    background-color: #d3def1;
+    line-height: 3.0;
+  }
+  .title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 50px;
+  }
+  input[type="text"] {
+    width: 70%;
+    height: 40px;
+  }
+  input[type="submit"] {
+    width: 200px;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+
+  

@@ -1,0 +1,65 @@
+<%= stylesheet_link_tag 'edit', :media => "all" %>
+
+
+
+
+<%= form_for @post do |f| %>
+
+
+<div class="edit">
+
+
+
+    <div class="field">
+    <%= f.label :ジャンル %>
+    <%= f.select :genre, 
+    [["ダイエット", "ダイエット"], 
+    ["就活", "就活"], 
+    ["勉強", "勉強"],
+    ["節約", "節約"],
+    ["料理", "料理"],
+    ["その他", "その他"]], include_blank: "選択して下さい" %>
+  </div>
+  
+    <%= f.label :memo %>
+    <%= f.text_field :memo, :size => 140 %> 
+
+    <div class="field">
+  <%= f.label :画像 %>
+  <%= f.file_field :image %>
+</div>
+
+    <div class="field">
+    <%= f.label :YouTube%>
+    <%= f.text_field :youtube, :size => 30 %>
+  </div>
+  
+  <div class="field">
+  <%= f.label :コメント %>
+  <%= f.text_field :comment, :size => 30 %>
+  </div>
+
+  <h5>総合評価</h5>
+<div class="star">
+ <%= f.radio_button :overall, 5 ,id: 'star1'%>
+ <label for="star1"><span class="text">最高</span>★</label>
+
+ <%= f.radio_button :overall, 4 ,id: 'star2'%>
+ <label for="star2"><span class="text">良い</span>★</label>
+
+ <%= f.radio_button :overall, 3 ,id: 'star3'%>
+ <label for="star3"><span class="text">普通</span>★</label>
+
+ <%= f.radio_button :overall, 2 ,id: 'star4'%>
+ <label for="star4"><span class="text">悪い</span>★</label>
+
+ <%= f.radio_button :overall, 1 ,id: 'star5'%>
+ <label for="star5"><span class="text">最悪</span>★</label>
+</div>
+
+    <%= f.submit "編集する" %>
+
+
+  <% end %>
+
+  </div>

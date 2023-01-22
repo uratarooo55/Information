@@ -1,0 +1,30 @@
+<h1>URARAPAGE</h1>
+<h3>post詳細</h3>
+<div class="post">
+  <p><%= @post.memo %></p>
+  <p><%= @post.created_at %></p>
+</div>
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Youtube:</strong>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/<%= @post.youtube.last(11)%>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
+
+
+<div>
+<h2>評価：
+<span class="star-rating">
+   <span class="star-rating-front" style="width: <%= getPercent(@post.overall) %>%;">★★★★★</span>
+   <span class="star-rating-back">★★★★★</span>
+</span> 
+</h2>
+</div> 
+
+
+
+<%= link_to "post一覧に戻る", posts_path %>
+<%= link_to "編集する", edit_post_path(@post.id) %>
+
+

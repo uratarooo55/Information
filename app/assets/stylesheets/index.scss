@@ -1,0 +1,264 @@
+
+
+ h1 {
+  width: 200px;
+  margin: 30px auto;
+  text-align: left;
+}
+
+//検索
+.kennsak
+.body{
+ font-family: "メイリオ";
+}
+
+  
+  .posts-container {
+    width: 50%;
+    margin: 10px auto;
+  }
+
+  h3 {
+    padding-left:70px;
+    margin: 0px auto;
+  
+  }
+
+  //検索
+  .kennsaku{
+    text-align: center; 
+    margin: 50px auto;
+    width: 60%;
+    border: solid #D4D4D4;
+    border-radius: 10px;
+    text-align: center;
+    background-color: white;
+  }
+  .title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 50px;
+  }
+
+  input[type="text"] {
+    width: 30%;
+    height: 40px;
+    margin-bottom: 15px;
+  }
+
+  input[type="submit"] {
+    width: 200px;
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+  }
+
+  .kennsaku h3 {
+    padding-left:50px;
+    margin: 18px auto;
+  
+  }
+
+
+
+  //カテゴリー
+  .center{
+    text-align: center;
+  }
+  .center {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px 10px;
+    text-align: center;
+    max-width: 1500px;
+    padding-left:70px;
+    font-family: 'Kiwi Maru', serif;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+//料理
+.btn-circle-stitch1{
+  display: inline-block;
+  text-align: center;
+  background-size: cover;
+}
+.btn-circle-stitch1{
+  display: block;
+}
+.btn-circle-stitch1 img{
+  width: 250px;
+  height: 250px;
+  }
+  .cooking{
+  text-align: center;
+  
+
+}
+
+
+//ダイエット
+.btn-circle-stitch2{
+    display: inline-block;
+    text-align: center;
+    background-size: cover;
+}
+.btn-circle-stitch2{
+    display: block;
+}
+
+.btn-circle-stitch2 img{
+  width: 250px;
+  height: 250px;
+  }
+  .diet{
+    text-align: center;
+  }
+
+//就活
+
+.btn-circle-stitch3{
+  display: inline-block;
+  text-align: center;
+  background-size: cover;
+}
+.btn-circle-stitch3{
+  display: block;
+}
+
+.btn-circle-stitch3 img {
+  width: 250px;
+  height: 250px;
+  }
+  
+.jobhunthing{
+  text-align: center;
+}
+
+
+  //勉強
+
+.btn-circle-stitch4{
+  display: inline-block;
+  text-align: center;
+  background-size: cover;
+}
+.btn-circle-stitch4{
+  display: block;
+}
+
+.btn-circle-stitch4 img{
+  width: 250px;
+  height: 250px;
+}
+
+.study{
+  text-align: center;
+}
+
+
+//節約
+.btn-circle-stitch5{
+  display: inline-block;
+  text-align: center;
+  background-size: cover;
+}
+.btn-circle-stitch5{
+  display: block;
+}
+
+.btn-circle-stitch5 img{
+  width: 250px;
+  height: 250px;
+}
+
+.save{
+  text-align: center;
+}
+
+
+//その他
+.btn-circle-stitch6{
+  display: inline-block;
+  text-align: center;
+  background-size: cover;
+}
+.btn-circle-stitch6{
+  display: block;
+}
+
+.btn-circle-stitch6 img{
+width: 250px;
+  height: 250px;
+}
+
+.others{
+  text-align: center;
+}
+
+
+
+.btn-circle-stitch {
+  
+    background-image: url("category2.jpg");
+    background-size: cover;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 100%;
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    border-radius: 50%;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 0px 0px 0px 5px #a58c4e;
+    border: dashed 2px #FFF;
+    transition: .4s;
+    margin: 50px auto;
+    max-width: 1000px;
+    text-align: center;
+}
+.btn-circle-stitch:hover {
+    background: #d6d6d6;
+    box-shadow: 0px 0px 0px 5px #c8c8c8;
+}
+
+
+  .tweet {
+    border-top: solid black;
+    margin-top: 10px;
+    padding-top: 20px;
+    text-align: center;
+  }
+  .main-box {
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+  .time {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .star-rating {
+    position: relative;
+    display: inline-block;
+    width: 5em;
+    height: 1em;
+    font-size: 25px;
+  }
+  .star-rating-front {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    color: #ffcc33;
+  }
+  .star-rating-back {
+    display: inline-block;
+    color: #ccc;
+
+  }

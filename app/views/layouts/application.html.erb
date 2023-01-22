@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Information</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&display=swap" rel="stylesheet">
+
+</head>
+
+  <body>
+ <header>
+  <h1>NOTE</h1>
+  <div class="header-list">
+   
+    <% if user_signed_in? %>
+    <%= button_to "ログアウト", destroy_user_session_path, method: :delete %>
+     
+    <% else %>
+     <%= link_to "新規登録", new_user_registration_path %>
+     <%= link_to "ログイン", new_user_session_path %>
+    <% end %>
+  
+  </div>
+ </header>
+ <main>
+  <%= yield %>
+ </main>
+</body>
+
+<footer>
+<p>urarapage.</p>
+</footer>
+
+
+</html>

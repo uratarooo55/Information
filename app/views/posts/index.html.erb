@@ -1,0 +1,103 @@
+<%= stylesheet_link_tag 'index', :media => "all" %>
+
+
+
+
+
+<% if user_signed_in? %>
+  <%= link_to "マイページへ", user_path(current_user.id) %>
+<% end %>
+
+
+<h1>    </h1>
+
+<h3>カテゴリー</h3>
+
+     
+<div class="center">
+<div href="#" class="btn-circle-stitch1">
+<a href="posts/cooking"><img src="https://uploads-ssl.webflow.com/603c87adb15be3cb0b3ed9b5/60597de45ceb0e1c354bd6d9_31.png" alt="就活"></a>
+<p class="cooking">料理</p>
+</div>
+
+<div href="#" class="btn-circle-stitch2">
+<a href="posts/diet"><img src="https://uploads-ssl.webflow.com/603c87adb15be3cb0b3ed9b5/63c7cf26e1e71733f6658f69_101.png" alt="ダイエット"></a>
+<p class="diet">ダイエット</p>
+</div>
+
+<div href="#" class="btn-circle-stitch3">
+<a href="posts/jobhunting"><img src="https://uploads-ssl.webflow.com/603c87adb15be3cb0b3ed9b5/6056e602e5d9ed2831c70737_13.png" alt="就活"></a>
+<p class="jobhunthing">就活</p>
+</div>
+
+<div href="#" class="btn-circle-stitch4">
+<a href="posts/study"><img src="https://uploads-ssl.webflow.com/603c87adb15be3cb0b3ed9b5/6099119905dc8225f36ebb25_69.png"="勉強"></a>
+<p class="study">勉強</p>
+</div>
+
+<div href="#" class="btn-circle-stitch5">
+<a href="posts/saving"><img src="https://uploads-ssl.webflow.com/603c87adb15be3cb0b3ed9b5/610a4a41b289383fd293f8e9_85.png" alt="節約"></a>
+<p class="saving">節約</p>
+</div>
+
+<div href="#" class="btn-circle-stitch6">
+<a href="posts/others"><img src="https://uploads-ssl.webflow.com/603c87adb15be3cb0b3ed9b5/608161e0f1331d26e4c93a14_64.png" alt="その他"></a>
+<p class="others">その他</p>
+</div>
+
+</p>
+</div>
+
+<div class =kennsaku>
+<h3>投稿内容から検索</h3>
+  <a href="#">
+ <%= form_tag({controller:"posts",action:"index"}, method: :get) do %>
+   <%= text_field_tag :search %>
+   <%= submit_tag '検索する'  %>
+<% end %>
+</a>
+
+</div>
+
+
+<%= link_to "新規投稿へ", new_post_path %>
+
+
+
+<div class="tweets-container">
+
+  <% @posts.each do |t| %>
+    <div class="tweet">
+
+    <%= t.genre %>
+    <%= t.memo %>
+    <%= image_tag t.image_url, size: "250x200" if t.image? %>
+    <%= t.site %>
+    
+    <iframe width="300" height="150" src="https://www.youtube.com/embed/<%= t.youtube.last(11)%>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <%= t.comment %>
+
+    <div>
+<h2>評価：
+<span class="star-rating">
+   <span class="star-rating-front" style="width: <%= getPercent(t.overall) %>%;">★★★★★</span>
+   <span class="star-rating-back">★★★★★</span>
+</span> 
+</h2>
+</div>  
+
+
+      <%= link_to "詳細へ", post_path(t.id) %>
+      <%= link_to "編集する", edit_post_path(t.id) %>
+      <%= button_to "削除する", post_path(t.id), method: :delete %>
+     
+
+    <%= t.user.email %>
+
+
+    </div>
+  <% end %>
+</div>
+
+
+
