@@ -1,0 +1,33 @@
+.dietpage {
+    display: flex;
+    font-family: 'Kiwi Maru', serif;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.dietpage h1{
+    text-align: center; 
+    margin: 25px auto;
+    width: 39%;
+    border: solid #D4D4D4;
+    border-radius: 57px;
+    text-align: center;
+    background-color: white;
+    
+}
+
+.shousai{
+    text-align: center;
+}
+
+
+.title1{
+    margin:auto;
+    text-align: center;
+    width: 200px;
+    position: relative;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: #353535;
+    border-bottom: 4px dashed;
+}

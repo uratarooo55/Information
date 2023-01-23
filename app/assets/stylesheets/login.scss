@@ -1,19 +1,30 @@
 
 
 .form{
-  background: black;
+  background:transparent;
   width: 400px;
   margin: 0 auto;
   text-align: left;
-  margin-top: 10em;
+  margin-top: 50px;
   
   label{
     display: block;
     text-align: left;
-    color: white;
+    color: black;
     font-size: .875em;
   }
   
+  h2{
+    position: relative;
+    margin-bottom: 0.2rem;
+    padding: 0.5rem 0rem;
+    color: #353535;
+    border-bottom: 4px dashed;
+    font-weight: bold;
+    font-size: 26px;
+  }
+
+
   form{
     
     .text-input{

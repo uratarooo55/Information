@@ -1,0 +1,24 @@
+{
+  "name": "information",
+  "version": "1.0.0",
+  "description": "",
+  "main": "babel.config.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uratarooo55/Information.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/uratarooo55/Information/issues"
+  },
+  "homepage": "https://github.com/uratarooo55/Information#readme"
+  
+}

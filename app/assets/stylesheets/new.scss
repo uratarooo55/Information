@@ -2,27 +2,37 @@
     text-align: center;
   }
 
-
   .new{
     text-align: center;
     flex-direction: row-reverse;
     justify-content: flex-end;
     box-align: center;
+    font-family: 'Kiwi Maru', serif;
+    font-weight: bold;
+    white-space: nowrap;
   }
 
+  h1{
+    font-family: 'Kiwi Maru', serif;
+    font-weight: bold;
+    white-space: nowrap;
+  }
+
+  *{
+    padding:0; 
+    margin:0;
+  }
   .star{
-    margin: 10px;
+    margin: 0px;
     text-align: center;
-  
   }
-
-
+  
   .star input[type='radio']{
     display: none;
   }
   .star label{
     position: relative;
-    padding: 10px 10px 0;
+    padding: 5px 5px 0;
     color: gray;
     cursor: pointer;
     font-size: 40px; /*星の大きさを変更するときはここ*/
@@ -33,7 +43,7 @@
     top: 0;
     right: 0;
     text-align: center;
-    font-size: 9px; /*星の上の説明書きの大きさを変更するときはここ*/
+    font-size: 0px; /*星の上の説明書きの大きさを変更するときはここ*/
     color: gray;
   }
   .star label:hover,
@@ -44,12 +54,12 @@
 
 
   .new {
-    margin: 40px auto;
-    width: 50%;
+    margin: 30px auto;
+    width: 40%;
     border: solid #d3def1;
     border-radius: 20px;
     text-align: center;
-    background-color: #d3def1;
+    background-color: #f6faff;
     line-height: 3.0;
   }
   .title {
@@ -64,7 +74,7 @@
   input[type="submit"] {
     width: 200px;
     font-size: 20px;
-    margin-top: 50px;
+    margin-top: 0px;
     margin-bottom: 30px;
   }
 

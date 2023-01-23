@@ -19,6 +19,30 @@
   padding: 0;
   margin: 0;
 }
+
+body {
+  background-image:
+      radial-gradient(290px 300px , rgba(123,222,217, 0.5) 20%, transparent 20%),
+      radial-gradient(800px 780px , rgba(123,222,217, 0.5) 20%, transparent 20%),
+      radial-gradient(1000px 990px , rgba(123,222,217, 0.5) 20%, transparent 20%),
+      radial-gradient(400px 380px , rgba(123,222,217, 0.5) 20%, transparent 20%),
+      radial-gradient(750px 750px , rgba(123,222,217, 0.5) 20%, transparent 20%),
+      radial-gradient(100px 100px , rgba(123,222,217, 0.5) 20%, transparent 20%);
+  background-size: 
+      1230px 1280px,
+      810px 910px,
+      1470px 990px,
+      1200px 1700px,
+      1520px 1200px,
+      1100px 1300px;
+  background-position: 
+      -300px -550px,
+      -200px 100px,
+      50px 510px,
+      -200px -550px,
+      -180px -250px,
+      130px -150px;
+}
 body {
   background-color:#F1F1F1;
   min-height: 100vh;
@@ -26,22 +50,33 @@ body {
   font-family: MS 明朝"Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", "ＭＳ Ｐゴシック", sans-serif;
   display: flex;
   flex-direction: column;
+  font-family: 'Kiwi Maru', serif;
+  font-weight: bold;
+  white-space: nowrap;
 }
 header {
-  background-color: #D4D4D4;
-  height: 60px;
+  background-color: white;
+  height: 55px;
   font-weight: bold;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+header img{
+  width: 60px;
+  height: 60px;
+  }
+
 header a {
-  color: white; 
+  color: #87CEEB;
   text-decoration: none; 
 }
 header h1 {
-  color: white;
-  margin-left: 20px;
+  color: #87CEEB;
+  margin-left: 0px;
+  font-family: 'Kiwi Maru', serif;
+  font-weight: bold;
+  font-size: 30px;
 }
 .header-list {
   display: flex;
@@ -55,9 +90,9 @@ header li {
   margin-right: 40px;
 }
 footer {
-  color: white;
+  color: #87CEEB  ;
   height: 30px;
-  background-color: #D4D4D4;
+  background-color: white;
   bottom: 0;
   width: 100%;
   display: flex;
@@ -77,3 +112,5 @@ footer {
   width: 200px;
   margin-bottom: 30px;
 }
+
+
