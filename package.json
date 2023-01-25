@@ -20,5 +20,12 @@
     "url": "https://github.com/uratarooo55/Information/issues"
   },
   "homepage": "https://github.com/uratarooo55/Information#readme"
-  
+}
+
+{
+  "name": "my-package",
+  "scripts": {
+    "build": "babel src -d lib",
+    "test": "jest"
+  }
 }
